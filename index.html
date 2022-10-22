@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .header {
+        background-color: rgb(255, 255, 255);
+        height: 70px;
+        width: auto;
+        align-items: flex-end;
+
+    }
+
+    img {
+        height: 60px;
+        width: 140px;
+        padding-top: 2px;
+        padding-left: 3px;
+    }
+
+    input {
+        height: 40px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    .items {
+        display: list-item;
+        display: inline-flex;
+    }
+     .items h2{
+        width: 200px;
+        color: rgb(98, 98, 247);
+        height: 80px;
+     }
+    .box1 {
+        height: 700px;
+        /* border: 2px solid red; */
+        background-color: rgb(240, 240, 240);
+        width: 300px;
+        display: inline-flex;
+
+    }
+
+    .box1 div ul i {
+        display: inline-flex;
+        padding: 2px;
+        padding-left: 5px;
+        margin: 12px;
+    }
+
+    .box1 div ul {
+        padding-left: 15px;
+    }
+
+    .material-icon {
+        padding-top: 4px;
+    }
+
+    .box1 ul :hover {
+        background-color: rgb(135, 135, 135);
+    }
+
+    .left {
+        display: inline-flex;
+    }
+
+    .box2 {
+        /* border: 2px solid brown; */
+        width: 1200px;
+        background-color: rgb(232, 229, 229);
+    }
+
+    .box2 h2 {
+        margin-left: 25px;
+    }
+
+    .fold ul {
+        /* border: 2px solid brown; */
+        text-align: center;
+        padding-top: 15px;
+        display: inline-flex;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(202, 202, 202);
+        height: 70px;
+        width: 100px;
+        border-radius: 5px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    img{
+        margin-left: 770px;
+        height: 60px;
+    }
+    .fold ul p {
+
+        /* margin-top: 60px; */
+    }
+
+    hr {
+        margin: 0px;
+
+    }
+</style>
+
+<body>
+
+    <div class="header">
+        <div class="items">
+            <a>
+                <h2>GOOGLE DRIVE</h2>
+                <!-- <img src="data:image/png;base64,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" -->
+                <!-- alt="" srcset=""> -->
+            </a>
+            <a><input type="text" placeholder="type here to Search.."></a>
+            <img src="https://imgs.search.brave.com/W8Xph4wJ3YJq8x0K1WCqW0VVRI8jtNSP_bCW_F3lnSI/rs:fit:720:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/NjJuV3hrb2l1NlhS/YU1ycUpHVU93SGFF/NCZwaWQ9QXBp"
+                alt="" srcset="" >
+        </div>
+    </div>
+    <hr color="black" width="1800px">
+    <div class="left">
+        <div class="box1">
+            <div>
+                <ul style="background-color:rgb(157, 157, 157); border-radius: 7px; ">
+                    <i class="material-icons" style="font-size:24px;">dashboard</i>my drive
+                </ul>
+                <ul><i class="material-icons" style="font-size:24px;">devices</i>computer</ul>
+                <ul><i class="material-icons" style="font-size:24px;">people</i>shared with me</ul>
+                <ul><i class="material-icons" style="font-size:24px;">camera</i>google photo</ul>
+                <ul><i class="material-icons" style="font-size:24px;">access_time</i>payement and subscription</ul>
+                <ul><i class="material-icons" style="font-size:24px;">star</i>stared</ul>
+                <hr color="black" width="290px">
+                <ul><i class="material-icons" style="font-size:24px;">star</i>trash</ul>
+                <hr color="black" width="280px">
+                <ul><i class="material-icons" style="font-size:24px;">cloud</i>backup</ul>
+                <hr color="black" width="290px">
+            </div>
+        </div>
+        <div class="box2">
+            <div>
+                <h2>Folder</h2>
+            </div>
+            <hr color="black" width="1200px">
+
+            <div class="fold">
+                <ul>
+                    <p>folder 1</p>
+                </ul>
+                <ul>
+                    <p>folder 2</p>
+                </ul>
+                <ul>
+                    <p>folder 3</p>
+                </ul>
+                <ul>
+                    <p>folder 4</p>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
